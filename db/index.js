@@ -1,7 +1,8 @@
 const { Client } = require('pg') // imports the pg module
+require('dotenv').config()
 
-const client = new Client('postgres://localhost:5432/juicebox-dev');
-client.password = 'alpaca'
+const client = new Client(process.env.DATABASE_URL);
+client.password = '5oRdhO4hSlVfC4mALwkQJeuvF4BMyJej'
 /**
  * USER Methods
  */
